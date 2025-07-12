@@ -15,6 +15,10 @@ CORS(app)
 app.register_blueprint(filter_bp)
 app.register_blueprint(analytics_bp)
 
+@app.route("/", methods=["GET"])
+def index():
+    return jsonify({"message": "Welcome to the AirInsights API!"})
+
 @app.route("/flights", methods=["GET"])
 def fetch_aviationstack():
     try:
