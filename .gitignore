@@ -1,0 +1,89 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+.next/
+/out/
+
+# production
+build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.env
+node_modules
+airinsights-frontend/node_modules
+airinsights-backend/dump.rdb
+.vscode/extensions.json
+airinsights-backend/frontend/package-lock.json
+airinsights-backend/package-lock.json
+package-lock.json
+
+# === Global Python ===
+__pycache__/
+*.py[cod]
+*.so
+
+# === Global Node ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === Virtual Envs (Backend) ===
+airinsights-backend/venv/
+
+# === Python Env / Secrets ===
+airinsights-backend/.env
+
+# === Python Cache / Logs ===
+airinsights-backend/*.log
+airinsights-backend/*.sqlite3
+airinsights-backend/*.db
+airinsights-backend/.pytest_cache/
+airinsights-backend/.coverage
+
+# === Frontend Build ===
+airinsights-frontend/.next/
+airinsights-frontend/out/
+
+# === Frontend Env ===
+airinsights-frontend/.env.local
+airinsights-frontend/.env.*.local
+airinsights-frontend/.env*
+
+# === IDE Stuff ===
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
