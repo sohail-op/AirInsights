@@ -59,7 +59,7 @@ export default function Dashboard() {
         return
       }
       
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/insights', combinedDat`)
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/insights`, combinedData)
       setInsights(res.data.insights)
       
     
